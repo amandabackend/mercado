@@ -1,5 +1,6 @@
 package br.com.senai.backend.sistema_mercado.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.senai.backend.sistema_mercado.models.Mercadoria;
@@ -10,13 +11,13 @@ public class MercadoriaService {
     
 
 @Autowired
-private  MercadoriaRepositoy mercadoriaRepositoy;
+private  MercadoriaRepositoy mercadoriaRepository;
 
 public Mercadoria cadastrar (Mercadoria mercadoria){
-return mercadoriaRepositoy.save(mercadoria);
+return mercadoriaRepository.save(mercadoria);
 }
-public Mercadoria recuperarPorId (Integer Id) {
-return mercadoriaRepository.findById(Id).get();
+public Mercadoria recuperarPorId (Integer id) {
+return mercadoriaRepository.findById(id).get();
 }
 
 

@@ -1,4 +1,4 @@
-package br.com.senai.backend.sistema_mercado.config;
+package br.com.senai.backend.sistema_mercado.configs;
 
 import org.springframework.context.annotation.Configuration;
 
